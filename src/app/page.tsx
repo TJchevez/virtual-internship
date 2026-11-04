@@ -20,21 +20,23 @@ export default function Home() {
       </div>
     </nav>
     <section>
-      <div className="flex">
+      <div className="flex gap-8 px-8 py-4">
         <div>
-      <div>
-        Gain more knowledge in less time
-      </div>
-      <div>
-        Great summaries for busy people, individuals who barely have time to read, and even people who don’t like to read.
-      </div>
+      <h1 className="text-4xl font-bold">
+        Gain more knowledge <br/>in less time
+      </h1>
+      <p>
+        Great summaries for busy people, <br/>
+        individuals who barely have time to read, <br/>
+        and even people who don’t like to read.
+      </p>
       <button>
         Login
       </button>
         </div>
         <div>
-          <figure>
-            <Image src={landing} alt="logo"/>
+          <figure className="w-full max-w-md">
+            <Image src={landing} alt="Illustration of a person reading a summary"/>
           </figure>
         </div>
       </div>
