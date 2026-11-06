@@ -20,17 +20,17 @@ export default function Home() {
       </div>
     </nav>
     <section>
-      <div className="flex gap-80 px-8 py-4 max-w-[1200px] mx-auto">
+      <div className="flex gap-72 px-8 py-16 max-w-[1200px] mx-auto">
         <div>
-      <h1 className="text-4xl font-bold">
+      <h1 className="text-4xl font-bold pb-6">
         Gain more knowledge <br/>in less time
       </h1>
-      <p>
+      <p className="pb-6 text-xl">
         Great summaries for busy people, <br/>
         individuals who barely have time to read, <br/>
         and even people who don’t like to read.
       </p>
-      <button>
+      <button className="bg-[#2bd97c] py-2 px-40 rounded">
         Login
       </button>
         </div>
