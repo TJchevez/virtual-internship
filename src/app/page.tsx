@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <nav>
-      <div className="flex justify-between items-center px-8 py-2">
+      <div className="flex justify-between items-center px-8 py-2 max-w-[1200px] mx-auto">
         <figure className="w-40">
           <Image src={logo} alt="logo" />
         </figure>
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
     </nav>
     <section>
-      <div className="flex gap-8 px-8 py-4">
+      <div className="flex gap-80 px-8 py-4 max-w-[1200px] mx-auto">
         <div>
       <h1 className="text-4xl font-bold">
         Gain more knowledge <br/>in less time
