@@ -15,10 +15,10 @@ export default function Home() {
             <Image src={logo} alt="logo" />
           </figure>
           <ul className="flex justify-between space-x-4 list-none">
-            <li>Login</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Help</li>
+            <li className="hover:text-[#2bd97c] cursor-pointer">Login</li>
+            <li className="cursor-not-allowed">About</li>
+            <li className="cursor-not-allowed">Contact</li>
+            <li className="cursor-not-allowed">Help</li>
           </ul>
         </div>
       </nav>
@@ -34,7 +34,7 @@ export default function Home() {
               individuals who barely have time to read, <br />
               and even people who don’t like to read.
             </p>
-            <button className="bg-[#2bd97c] py-2 px-40 rounded">Login</button>
+            <button className="bg-[#2bd97c] py-2 px-40 rounded cursor-pointer hover:bg-green-700">Login</button>
           </div>
           <div>
             <figure className="w-full max-w-md">
