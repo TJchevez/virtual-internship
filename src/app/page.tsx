@@ -86,8 +86,8 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="flex justify-between items-center px-8 py-2 max-w-[1200px] mx-auto my-8">
-          <div>
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 px-8 py-2 max-w-[1200px] mx-auto my-8">
+          <div className="flex flex-col items-start gap-4">
             <p className="text-3xl font-bold text-[#6b757b] mb-4">
               Enhance your knowledge
             </p>
@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </div>
         {/* second section */}
-        <div className="flex justify-between items-center px-8 py-2 max-w-[1200px] mx-auto my-8">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 px-8 py-2 max-w-[1200px] mx-auto my-8">
           <div className="flex w-full max-w-[560px] flex-col gap-6 bg-[#f0f5f4] my-4 px-8 py-12">
             <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
               <p className="text-xl text-[#0365f2] font-bold">91%</p>
