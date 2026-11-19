@@ -23,17 +23,17 @@ export default function Home() {
       </nav>
       <section>
         <div className="flex gap-72 px-8 py-16 max-w-[1200px] mx-auto">
-          <div>
-            <h1 className="text-4xl font-bold pb-6">
-              Gain more knowledge <br />
+          <div className="m-2">
+            <h1 className="text-[40px] font-bold pb-6">
+              Gain more knowledge 
               in less time
             </h1>
-            <p className="pb-6 text-xl">
+            <p className="pb-6 text-xl font-light">
               Great summaries for busy people, <br />
               individuals who barely have time to read, <br />
               and even people who don’t like to read.
             </p>
-            <button className="bg-[#2bd97c] py-2 px-40 rounded cursor-pointer hover:bg-green-700">
+            <button className="bg-[#2bd97c] py-2 px-32 rounded cursor-pointer hover:bg-green-700">
               Login
             </button>
           </div>
