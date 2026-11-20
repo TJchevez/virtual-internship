@@ -15,15 +15,15 @@ export default function Home() {
           </figure>
           <ul className="flex justify-between space-x-4 list-none">
             <li className="hover:text-[#2bd97c] cursor-pointer">Login</li>
-            <li className="cursor-not-allowed">About</li>
-            <li className="cursor-not-allowed">Contact</li>
-            <li className="cursor-not-allowed">Help</li>
+            <li className="hidden sm:block cursor-not-allowed">About</li>
+            <li className="hidden sm:block cursor-not-allowed">Contact</li>
+            <li className="hidden sm:block cursor-not-allowed">Help</li>
           </ul>
         </div>
       </nav>
       <section>
-        <div className="flex gap-72 px-8 py-16 max-w-[1200px] mx-auto">
-          <div className="m-2">
+        <div className="flex flex-row gap-8 lg:gap-20 px-8 py-16 max-w-[1200px] mx-auto">
+          <div className="text-center md:text-left m-2">
             <h1 className="text-[40px] font-bold pb-6">
               Gain more knowledge 
               in less time
@@ -38,7 +38,7 @@ export default function Home() {
             </button>
           </div>
           <div>
-            <figure className="w-full max-w-md">
+            <figure className="hidden md:block w-full max-w-md">
               <Image
                 src={landing}
                 alt="Illustration of a person reading a summary"
@@ -48,143 +48,119 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2 className="text-center text-4xl font-bold tracking-tight text-[#002b40] px-8 py-2 max-w-[1200px] mx-auto">
-          Understand books in few minutes
-        </h2>
-        <div className="flex gap-64 justify-between items-center px-8 py-2 max-w-[1200px] mx-auto">
-          <div className="flex flex-col items-center text-center">
-            <Image className="w-20 h-20 mb-2" src={document} alt="document" />
-            <h3 className="text-xl font-bold tracking-tight text-[#002b40] mb-2">
-              Read or listen
-            </h3>
-            <p className="text-[#002b40]">
-              Save time by getting the core ideas from the best books.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <Image className="w-20 h-20 mb-2" src={lightbulb} alt="lightbulb" />
-            <h3 className="text-xl font-bold tracking-tight text-[#002b40] mb-2">
-              Find your next read
-            </h3>
-            <p className="text-[#002b40]">
-              Explore book lists and personalized recommendations.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <Image
-              className="w-20 h-20 mb-2"
-              src={microphone}
-              alt="microphone"
-            />
-            <h3 className="text-xl font-bold tracking-tight text-[#002b40] mb-2">
-              Briefcasts
-            </h3>
-            <p className="text-[#002b40]">
-              Gain valuable insights from briefcasts
-            </p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 px-8 py-2 max-w-[1200px] mx-auto my-8">
-          <div className="flex flex-col items-start gap-4">
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Enhance your knowledge
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Achieve greater success
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Improve your health
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Develop better parenting skills
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Increase happiness
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b]">
-              Be the best version of yourself!
-            </p>
-          </div>
-          <div className="flex w-full max-w-[560px] flex-col gap-6 bg-[#f0f5f4] my-4 px-8 py-12">
-            <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
-              <p className="text-xl text-[#0365f2] font-bold">93%</p>
-              <p className="text-xl">
-                of Summarist members{" "}
-                <span className="font-bold ">significantly increase</span>{" "}
-                reading frequency.
-              </p>
-            </div>
-            <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
-              <p className="text-xl text-[#0365f2] font-bold">96%</p>
-              <p className="text-xl">
-                of Summarist members{" "}
-                <span className="font-bold">establish better</span> habits.
-              </p>
-            </div>
-            <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
-              <p className="text-xl text-[#0365f2] font-bold">90%</p>
-              <p className="text-xl">
-                have made{" "}
-                <span className="font-bold">significant positive</span> change
-                to their lives.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* second section */}
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 px-8 py-2 max-w-[1200px] mx-auto my-8">
-          <div className="flex w-full max-w-[560px] flex-col gap-6 bg-[#f0f5f4] my-4 px-8 py-12">
-            <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
-              <p className="text-xl text-[#0365f2] font-bold">91%</p>
-              <p className="text-xl">
-                of Summarist members{" "}
-                <span className="font-bold ">
-                  report feeling more productive
-                </span>{" "}
-                after incorporating the service into their daily routine.
-              </p>
-            </div>
-            <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
-              <p className="text-xl text-[#0365f2] font-bold">94%</p>
-              <p className="text-xl">
-                of Summarist members have{" "}
-                <span className="font-bold">noticed an improvement </span> in
-                their overall comprehension and retention of information.
-              </p>
-            </div>
-            <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
-              <p className="text-xl text-[#0365f2] font-bold">88%</p>
-              <p className="text-xl">
-                of Summarist members{" "}
-                <span className="font-bold">feel more informed</span> about
-                current events and industry trends since using the platform.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-end gap-4">
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Expand your learning
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Accomplish your goals
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Strengthen your vitality
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Become a better caregiver
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b] mb-4">
-              Improve your mood
-            </p>
-            <p className="text-3xl font-bold text-[#6b757b]">
-              Maximize your abilities
-            </p>
-          </div>
-        </div>
-      </section>
+  {/* FIRST STATISTICS SECTION */}
+ <div className="flex flex-col md:flex-row justify-between items-center md:items-stretch gap-8 px-8 py-2 max-w-[1200px] mx-auto my-8">
+    {/* Gray text */}
+    <div className="flex flex-col items-start text-center md:items-start md:text-left gap-4">
+      <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+        Enhance your knowledge
+      </p>
+      <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+        Achieve greater success
+      </p>
+      <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+        Improve your health
+      </p>
+      <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+        Develop better parenting skills
+      </p>
+      <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+        Increase happiness
+      </p>
+      <p className="text-3xl font-medium text-[#6b757b]">
+        Be the best version of yourself!
+      </p>
+    </div>
+
+    {/* Statistics box */}
+    <div className="flex w-full max-w-[500px] flex-col justify-evenly gap-6 bg-[#f0f5f4] px-8 py-12">
+      <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
+        <p className="text-xl text-[#0365f2] font-bold">93%</p>
+        <p className="text-xl">
+          of Summarist members{" "}
+          <span className="font-bold">significantly increase</span>{" "}
+          reading frequency.
+        </p>
+      </div>
+
+      <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
+        <p className="text-xl text-[#0365f2] font-bold">96%</p>
+        <p className="text-xl">
+          of Summarist members{" "}
+          <span className="font-bold">establish better</span> habits.
+        </p>
+      </div>
+
+      <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
+        <p className="text-xl text-[#0365f2] font-bold">90%</p>
+        <p className="text-xl">
+          have made{" "}
+          <span className="font-bold">significant positive</span> change
+          to their lives.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+{/* SECOND STATISTICS SECTION */}
+<div className="flex flex-col md:flex-row justify-between items-center md:items-stretch gap-8 px-8 py-2 max-w-[1200px] mx-auto my-8">
+
+  {/* Statistics box */}
+  <div className="order-2 md:order-1 flex w-full max-w-[500px] flex-col justify-evenly gap-6 bg-[#f0f5f4] px-8 py-12">
+    <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
+      <p className="text-xl text-[#0365f2] font-bold">91%</p>
+      <p className="text-xl">
+        of Summarist members{" "}
+        <span className="font-bold">
+          report feeling more productive
+        </span>{" "}
+        after incorporating the service into their daily routine.
+      </p>
+    </div>
+
+    <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
+      <p className="text-xl text-[#0365f2] font-bold">94%</p>
+      <p className="text-xl">
+        of Summarist members have{" "}
+        <span className="font-bold">noticed an improvement</span>{" "}
+        in their overall comprehension and retention of information.
+      </p>
+    </div>
+
+    <div className="flex gap-4 mb-2 mx-2 max-w-[400px]">
+      <p className="text-xl text-[#0365f2] font-bold">88%</p>
+      <p className="text-xl">
+        of Summarist members{" "}
+        <span className="font-bold">feel more informed</span> about
+        current events and industry trends since using the platform.
+      </p>
+    </div>
+  </div>
+
+  {/* Gray text */}
+  <div className="order-1 md:order-2 flex flex-col items-start text-center md:items-end md:text-right gap-4">
+    <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+      Expand your learning
+    </p>
+    <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+      Accomplish your goals
+    </p>
+    <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+      Strengthen your vitality
+    </p>
+    <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+      Become a better caregiver
+    </p>
+    <p className="text-3xl lg:text-4xl font-medium text-[#6b757b] mb-4">
+      Improve your mood
+    </p>
+    <p className="text-3xl lg:text-4xl font-medium text-[#6b757b]">
+      Maximize your abilities
+    </p>
+  </div>
+</div>
+</section>
     </>
   );
 }

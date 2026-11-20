@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Summarist",
+  title: "Thanya Internship",
   description: "Discover your next great read.",
 };
 
